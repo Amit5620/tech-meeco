@@ -167,3 +167,156 @@
 .photo-name:hover {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
+
+
+/* Add media queries for responsiveness */
+
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .project-list {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .project-details {
+    padding: 15px;
+  }
+  .media-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .left-column {
+    width: 100%;
+  }
+  .right-column {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .image-column {
+    width: 100%;
+  }
+  .image-column img {
+    height: 100px;
+  }
+  #project-video {
+    height: 200px;
+  }
+  .container {
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 100%;
+    padding: 20px;
+  }
+  .photo-item {
+    margin-bottom: 20px;
+  }
+  .photo-image {
+    height: 150px;
+  }
+}
+
+/* Tablet devices (min-width: 769px and max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .project-container {
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+  }
+  .project-list {
+    max-width: 40%;
+    margin-right: 20px;
+  }
+  .project-details {
+    padding: 20px;
+  }
+  .media-section {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .left-column {
+    width: 60%;
+  }
+  .right-column {
+    width: 40%;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .image-column {
+    width: 50%;
+  }
+  .image-column img {
+    height: 120px;
+  }
+  #project-video {
+    height: 250px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .column {
+    flex: 50%;
+    padding: 30px;
+  }
+  .photo-item {
+    margin-bottom: 30px;
+  }
+  .photo-image {
+    height: 180px;
+  }
+}
+
+/* Desktop devices (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+  .project-container {
+    flex-direction: row;
+    padding: 50px;
+    gap: 50px;
+  }
+  .project-list {
+    max-width: 30%;
+    margin-right: 30px;
+  }
+  .project-details {
+    padding: 30px;
+  }
+  .media-section {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .left-column {
+    width: 60%;
+  }
+  .right-column {
+    width: 40%;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .image-column {
+    width: 50%;
+  }
+  .image-column img {
+    height: 150px;
+  }
+  #project-video {
+    height: 300px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .column {
+    flex: 50%;
+    padding: 50px;
+  }
+  .photo-item {
+    margin-bottom: 40px;
+  }
+  .photo-image {
+    height: 200px;
+  }
+}
